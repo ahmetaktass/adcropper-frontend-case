@@ -1,0 +1,130 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("./src/bicycle/Rectangle 1.png");
+}
+
+.bike-container {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  animation: yol 5s infinite;
+  -webkit-animation: yol 5s infinite;
+}
+
+@-webkit-keyframes yol {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 900px;
+  }
+}
+
+@keyframes yol {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 900px;
+  }
+}
+
+.whell-1 {
+  position: absolute;
+  bottom: 24%;
+  left: -24px;
+  -webkit-animation: mymove 5s infinite;
+          animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes mymove {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+.whell-2 {
+  position: absolute;
+  bottom: 24%;
+  left: 295px;
+  -webkit-animation: mymove 5s infinite;
+          animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+.balloon-1 {
+  position: absolute;
+  right: 50px;
+  bottom: -50px;
+  animation: balloons 12s infinite;
+  -webkit-animation: balloons 12s infinite;
+}
+
+@-webkit-keyframes balloons {
+  from {
+    bottom: 0px;
+  }
+  to {
+    top: 900px;
+  }
+}
+
+@keyframes balloons {
+  from {
+    bottom: 0px;
+  }
+  to {
+    top: 900px;
+  }
+}
+
+.balloon-2 {
+  position: absolute;
+  left: 150px;
+  bottom: -50px;
+  animation: balloons 12s infinite;
+  -webkit-animation: balloons 12s infinite;
+}
+
+@keyframes balloons {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 900px;
+  }
+}
+/*# sourceMappingURL=bicycle-animation.css.map */
